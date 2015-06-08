@@ -14,7 +14,7 @@ ResonatorNetwork {
 	}
 
 	init { arg resonators,connPointMatrix,massMatrix,excPointMatrix,readoutPointMatrix;
-		this.resonators = resonators ? [FDStringDesc.new,FDStringDesc.new(101)];
+		this.resonators = resonators ? [Resonator1D.new,Resonator1D.new(101)];
 		this.connPointMatrix = connPointMatrix ? Array2D.fromArray(2,1,[0.5,0.5]);
 		this.massMatrix = massMatrix ? Array2D.fromArray(2,1,[1,1]);
 		this.excPointMatrix = excPointMatrix ? Array2D.fromArray(2,1,[0.25,0]);
